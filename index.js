@@ -1,6 +1,6 @@
 var cart = [];
 
-function getCart(name) {
+function getCart() {
   return cart;
 }
 
@@ -9,11 +9,11 @@ function setCart(c) {
   return cart;
 }
 
-function addToCart(item) {
+function addToCart(name) {
  // write your code here
   let price = Math.floor(Math.random()*100);
 
-  let obj = {`itemName:${name}, itemPrice: ${price}`}
+  let obj = {`itemName:` name, `itemPrice:` price}
 
   cart.push(obj);
 
