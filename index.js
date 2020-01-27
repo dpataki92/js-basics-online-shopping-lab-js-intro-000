@@ -13,7 +13,9 @@ function addToCart(name) {
  // write your code here
   let price = Math.floor(Math.random()*100);
 
-  let obj = {`itemName` : name, `itemPrice` : price}
+  let obj = {};
+  obj[`itemName`] = name;
+  obj[`itemPrice`] = price;
 
   cart.push(obj);
 
