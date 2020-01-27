@@ -29,7 +29,7 @@ function viewCart() {
   let str = `In your cart, you have `;
 
   for (let i = 0; i < cart.length; i++) {
-    i !== cart.length-1 ? str += `${cart[i]['itemName']} at $${cart[i]['itemPrice']}, ` : `and ${cart[i]['itemName']} at $${cart[i]['itemPrice']}.`
+    i !== cart.length-1 ? str += `${cart[i]['itemName']} at $${cart[i]['itemPrice']}, ` : str += `and ${cart[i]['itemName']} at $${cart[i]['itemPrice']}.`
   }
 
   return str;
